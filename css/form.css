@@ -58,7 +58,7 @@ body {
     border: 2px solid black;
 }
 
-.container .col-md-3 img:not(:hover) {
+.container:hover .col-md-3 img:not(:hover) {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     opacity: .75;
