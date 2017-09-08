@@ -32,7 +32,7 @@ body {
 .chess {
     background-image: url('../img/chess.png');
     width: 75vh;
-    height: 75vh;
+    height: 103vh;
     position: absolute;
     left: 31vw;
     top: 14vh;
@@ -58,7 +58,7 @@ body {
     border: 2px solid black;
 }
 
-.container:hover .col-md-3 img:not(:hover) {
+.container .col-md-3 img:not(:hover) {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     opacity: .75;
