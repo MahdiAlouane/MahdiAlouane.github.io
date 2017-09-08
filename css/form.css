@@ -1,156 +1,185 @@
+@font-face {
+    font-family: lato;
+    src: url(Lato-Regular.ttg);
+}
+
 body {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     font-family: arial, sans-serif;
-  }
+}
+
 .logo-tayara {
     /* height: 12vh;
     width: 13vw; */
-    top: 0;
-    left: 0;
+    top: 2vh;
+    left: 1vw;
     /* background-image: url(../img/tayara.png);
     background-size: 100% 100%; */
-     
-      position: fixed;
-  }
+    position: fixed;
+}
 
-  .logo-danup {
+.logo-danup {
     /* height: 12vh;
     width: 13vw; */
-    top: 0;
-    right: 0;
+    top: 2vh;
+    right: 1vw;
     /* background-image: url(../img/tayara.png);
     background-size: 100% 100%; */
-     
-      position: fixed;
-  }
+    position: fixed;
+}
 
-  .chess {
-      background-image: url('../img/chess.png');
-      width: 75vh;
-      height: 75vh;
-     position: absolute;
-     left: 31vw;
-      top: 14vh;
-  }
+.chess {
+    background-image: url('../img/chess.png');
+    width: 75vh;
+    height: 75vh;
+    position: absolute;
+    left: 31vw;
+    top: 14vh;
+}
 
-  .grey {
-      height: 100%;
-      width: 50%;
-      background: #f3f3f3;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: -1;
-  }
+.grey {
+    height: 100%;
+    width: 50%;
+    background: #f3f3f3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
 
-  .container {
-      margin-top: 14vh;
-  }
+.container {
+    margin-top: 14vh;
+}
 
-  .container .col-md-3 img {
-      display: block;
-      margin: auto;
-      border: 2px solid black;
-  }
+.container .col-md-3 img {
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+}
 
-  .inline {
-      display: block;
-      margin: auto;
-      text-align: center;
-      margin-top: 1vh;
-  }
+.container:hover .col-md-3 img:not(:hover) {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: .75;
+}
 
-  .inline label {
-      font-size: 2em;
-      font-weight: 900;
-      vertical-align: middle;
-  }
+.inline {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 1vh;
+}
 
-  .inline input {
-      background: #f5f6f6;
-      border: 1px solid #c1c1c0;
-      border-left: none;
-      border-top: none;
-  }
+.inline label {
+    font-size: 2em;
+    font-weight: 900;
+    vertical-align: middle;
+}
 
-  .details {
-      margin-top: 2vh;
-      margin-bottom: 10vh;
-  }
+.inline input {
+    background: #f5f6f6;
+    border: 1px solid #c1c1c0;
+    border-left: none;
+    border-top: none;
+}
 
-  .form-group input {
+.details {
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+}
+
+.form-group input {
     border: 0;
     background-color: #eee;
-    -webkit-box-shadow: 2px 2px 9px 0px rgba(219,218,217,1);
-    -moz-box-shadow: 2px 2px 9px 0px rgba(219,218,217,1);
-    box-shadow: 2px 2px 9px 0px rgba(219,218,217,1);
-  }
+    -webkit-box-shadow: 2px 2px 9px 0px rgba(219, 218, 217, 1);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(219, 218, 217, 1);
+    box-shadow: 2px 2px 9px 0px rgba(219, 218, 217, 1);
+}
 
-  .form-group .input-group-addon {
-      border: 0;
-      background-color: #eee;
-      -webkit-box-shadow: 0px 2px 9px 0px rgba(219,218,217,1);
-      -moz-box-shadow: 0px 2px 9px 0px rgba(219,218,217,1);
-      box-shadow: 0px 2px 9px 0px rgba(219,218,217,1);
-  }
+.form-group .input-group-addon {
+    border: 0;
+    background-color: #eee;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(219, 218, 217, 1);
+    -moz-box-shadow: 0px 2px 9px 0px rgba(219, 218, 217, 1);
+    box-shadow: 0px 2px 9px 0px rgba(219, 218, 217, 1);
+}
 
-  .btn-submit {
-      width: 12vh;
-      height: 12vh;
-      background-color: #6dc175;
-      border-radius: 10vh;
-      color: white;
-      -webkit-box-shadow: 10px 4px 45px -15px rgba(0,0,0,0.75);
-      -moz-box-shadow: 10px 4px 45px -15px rgba(0,0,0,0.75);
-      box-shadow: 10px 4px 45px -15px rgba(0,0,0,0.75); 
-  }
+.btn-submit {
+    width: 12vh;
+    height: 12vh;
+    background-color: #6dc175;
+    border-radius: 10vh;
+    color: white;
+    -webkit-box-shadow: 10px 4px 45px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 4px 45px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 4px 45px -15px rgba(0, 0, 0, 0.75);
+}
 
-  .submit {
-    margin-top: 5vh;  
+.submit {
+    margin-top: 15vh;
     margin-left: -7vw;
-  }
+}
 
-  .submit label {
-      font-weight: 500;
-      font-size: 1.15em;
-  }
-  .btn-submit:hover {
-      color: white;
-      animation: bounce 1s infinite ease-in-out;
-      transform-origin: center bottom;
-  }
+.submit label {
+    font-weight: 500;
+    font-size: 1.15em;
+    font-family: lato;
+}
 
-  @keyframes bounce {
+.btn-submit:hover {
+    color: white;
+    animation: bounce 1s infinite ease-in-out;
+    transform-origin: center bottom;
+}
+
+.details {
+    margin-top: 5vh;
+}
+
+.details .form-group {
+    margin-bottom: 5vh;
+}
+
+@keyframes bounce {
     from, 20%, 53%, 80%, to {
-      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-      transform: translate3d(0,0,0);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0, 0, 0);
     }
-  
     40%, 43% {
-      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-      transform: translate3d(0, -30px, 0);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -30px, 0);
     }
-  
     70% {
-      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-      transform: translate3d(0, -15px, 0);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -15px, 0);
     }
-  
     90% {
-      transform: translate3d(0,-4px,0);
+        transform: translate3d(0, -4px, 0);
     }
-  }
+}
 
-  @media only screen and (max-width:48em) { 
-	.chess {
+@keyframes flash {
+    from, 50%, to {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+.flash {
+    -webkit-animation: flash linear .5s forwards;
+    animation: flash linear .5s forwards;
+}
+
+@media only screen and (max-width:48em) {
+    .chess {
         display: none;
     }
     .submit-group {
         text-align: center;
     }
 }
-@media only screen and (max-width:48em) and (min-width:26.5625em) { 
-	/* CSS rules here */
-}
-  
+
+@media only screen and (max-width:48em) and (min-width:26.5625em) {}
