@@ -1,0 +1,187 @@
+  body {
+    height:100%;
+    width:100%;
+    font-family: arial, sans-serif;
+    overflow-x: hidden;
+  }
+  .clear {
+    clear:both;
+  }
+  .container {
+    width: 80vw;
+    margin: 8vh auto 0 12vw;    
+    padding: 20px;
+  }
+  .input-group {
+    position: relative;
+    bottom: 28vh;
+    left: 32.7vw;
+    width: 40vw;
+    height: 34vh;
+    margin-right: 0;
+    padding: 10px;    
+  }
+
+  .input-group-left {
+      width: 49%;
+      background-color: green;
+      height: 80%;
+      float: left;
+  }
+
+  .input-group-right {
+    width: 49%;
+    background-color: green;
+    height: 80%;
+    float: right;
+}
+
+  .input-group input {
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #d7ffdb;
+    box-shadow: 0 2px 0px #77bd7d;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 2vh;
+  }
+  .input-group input:focus {
+  outline: none;
+  background: white;
+  }
+
+  .input-group label {
+      width: 100%;
+  }
+  
+  .thumbnail p {
+      margin: 0;
+      text-align: center;
+  }
+  
+  .logo-tayara {
+    /* height: 12vh;
+    width: 13vw; */
+    top: 0;
+    left: 0;
+    /* background-image: url(../img/tayara.png);
+    background-size: 100% 100%; */
+    position: fixed;
+  }
+
+  .logo-danup {
+    /* height: 12vh;
+    width: 13vw; */
+    top: 0;
+    right: 0;
+    /* background-image: url(../img/tayara.png);
+    background-size: 100% 100%; */
+    position: fixed;
+  }
+
+  section {
+    width: calc(50% - 40px);
+    padding: 20px;
+    background: rgba(0, 92, 169, 0.8);;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  section.left {
+    float: left;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1440px) {
+    section.right {
+        position: relative;
+        bottom: 31vh;
+        left: 31.7vw;
+      }
+  }
+  section .input-container {
+    padding: 10px;
+  }
+  section .input-container label {
+    display: block;
+    margin-bottom: 4px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 0px 2px 1px #65ad6b;
+    font-family: 'Quicksand', sans-serif;
+  }
+  section .input-container input,
+  section .input-container textarea {
+    width: 100%;
+    padding: 5px 10px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    background: #fdda2d;
+    box-shadow: 0 2px 0px #ce4840;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #757575;
+  }
+  section .input-container input:focus,
+  section .input-container textarea:focus {
+    outline: none;
+    background: white;
+  }
+  section .input-container textarea {
+    height: 122px;
+    padding: 15px 10px;
+    resize: none;
+  }
+  .send-container {
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+  }
+  .send-container input {
+    background: #77bd7d;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .send-container input:hover {
+    background: #8ed294;
+  }
+  after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  @media (max-width: 992px) {
+    {
+      padding: 0 5%;
+    }
+  }
+  @media (max-width: 768px) {
+    {
+      margin-bottom: 50px;
+    }
+    section {
+      width: 100%;
+      margin: 0;
+    }
+    section.left {
+      margin-bottom: -30px;
+    }
+    .send-container {
+      margin-right: 0;
+      margin-top: 15px;
+    }
+    .send-container input {
+      width: 100%;
+    }
+  }
+  
+  .container ul.thumbnails.image_picker_selector li .thumbnail.selected {
+      background: #f04a3b;
+  }

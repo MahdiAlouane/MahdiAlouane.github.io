@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tayara Plus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.2.4/image-picker.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/287b8c6148.js"></script>
+</head>
+
+<body>
+    <img src="img/tayara.png" alt="" class="logo-tayara">
+    <img src="img/danup.png" alt="" class="logo-danup">
+    <div class="container">
+        <form action="">
+            <div class="picker">
+                <select class="image-picker">
+                    <option data-img-src="img/bd.png" value="1">Episode 1</option>
+                    <option data-img-src="img/bd.png" value="2">Episode 2</option>
+                    <option data-img-src="img/bd.png" value="3">Episode 3</option>
+                    <option data-img-src="img/bd.png" value="4">Episode 4</option>
+                    <option data-img-src="img/bd.png" value="5">Episode 5</option>
+                    <option data-img-src="img/bd.png" value="6">Episode 6</option>
+                    <option data-img-src="img/bd.png" value="7">Episode 7</option>
+                    <option data-img-src="img/bd.png" value="8">Episode 8</option>
+                    <option data-img-src="img/bd.png" value="9">Episode 9</option>
+                    <option data-img-src="img/bd.png" value="10">Episode 10</option>
+             </select>
+            </div>
+            <section class="right">
+                <div class="input-container">
+                    <label for="name"><i class="fa fa-user"></i> Nom</label>
+                    <input type="text" />
+                </div>
+                <div class="input-container">
+                    <label for="age" required><i class="fa fa-user-o"></i> Prénom</label>
+                    <input type="text" />
+                </div>
+                <div class="input-container">
+                    <label for="phone"><i class="fa fa-mobile"></i> Téléphone</label>
+                    <input type="text" />
+                </div>
+                <div class="input-container">
+                    <label for="email"><i class="fa fa-id-card"></i> CIN</label>
+                    <input type="text" />
+                </div>
+                <div class="input-container">
+                    <label for="url"><i class="fa fa-underline"></i> URL</label>
+                    <input type="text" />
+                </div>
+            </section>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.2.4/image-picker.min.js"></script>
+    <script>
+        var opt = {
+            hide_select: true,
+            show_label: true
+        };
+
+        $('.image-picker').imagepicker(opt);
+    </script>
+
+</body>
+
+</html>
