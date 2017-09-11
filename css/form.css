@@ -31,11 +31,12 @@ body {
 
 .chess {
     background-image: url(../img/chess.png);
-    width: 90vh;
-    height: 103vh;
+    width: 596px;
+    height: 681px;
     position: absolute;
-    left: 23.5vw;
-    top: 14vh;
+    left: 0;
+    right: 88px;
+    margin: auto;
 }
 
 .grey {
